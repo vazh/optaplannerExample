@@ -1,0 +1,12 @@
+entity Skill {
+	name String required
+}
+
+entity Employee {
+	name String required
+}
+
+relationship ManyToMany {
+	Skill{employee} to Employee{skill(name)}
+}
+paginate all with pagination
