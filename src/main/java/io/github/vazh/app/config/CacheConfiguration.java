@@ -45,6 +45,10 @@ public class CacheConfiguration {
             cm.createCache(io.github.vazh.app.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(io.github.vazh.app.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(io.github.vazh.app.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(io.github.vazh.app.domain.Skill.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.vazh.app.domain.Skill.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(io.github.vazh.app.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(io.github.vazh.app.domain.Employee.class.getName() + ".skills", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
